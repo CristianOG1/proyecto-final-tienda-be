@@ -8,8 +8,7 @@ module.exports = ({ env }) => ({
       user: env('DATABASE_USERNAME'),
       password: env('DATABASE_PASSWORD'),
       ssl: {
-        require: true,
-        rejectUnauthorized: false, // necesario para Neon
+        rejectUnauthorized: false, // Necesario para Neon
       },
     },
     pool: {
